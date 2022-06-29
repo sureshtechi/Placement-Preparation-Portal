@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Student
+        </title>
+
+        <link rel="shortcut icon" href="./IMG/logo_1.png"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./CSS/login.css">
+        <link href="http://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet">
+
+        <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="./CSS/user_page.css">
+        <link rel="stylesheet" href="./CSS/popup_ass.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./CSS/profile.css">
+        
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="./JS/graph1.js"></script>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="./JS/graph2.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav navbar-user navbar-right">
+                        <li><img id="logo" src="./IMG/logo_1.png"></li>
+                        <li><a class="navbar-brand" href="#" id="c_name" style="font-weight: bolder;">PlaceX</a></li>
+                      </ul>
+                    </div>
+                                        
+                  </div>
+                  <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-user navbar-right">
+                      <li><input class="form-control me-2" id="pos" type="search" placeholder="Search" aria-label="Search"></li>
+                      <li id="search"><a href="Login.html" class="btn btn-outline-success" type="submit">Logout</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </nav>
+          <nav class="navbar-primary" id="navi">
+            <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <ul class="navbar-primary-menu">
+              <li>
+                <a id="home" onclick="display_home()" href="#"><span class="glyphicon fa fa-home" aria-hidden="true"></span><span class="nav-label">Home</span></a>
+                <a id="mat" onclick="togglePopup_course()" href="#"><span class="glyphicon fa fa-book" aria-hidden="true"></span><span class="nav-label">Course</span></a>
+                <a id="assess" onclick="togglePopup_assess()" href="#"><span class="glyphicon fas fa-laptop-code" aria-hidden="true" ></span><span class="nav-label">Assessment</span></a>
+                <a id="comp" onclick="togglePopup_comp()" href="#"><span class="glyphicon fas fa-building"></span><span class="nav-label">Company</span></a>
+                <a id="perform" onclick="togglePopup_perform()" href="#"><span class="glyphicon fa fa-line-chart" aria-hidden="true"></span><span class="nav-label">Performance</span></a>
+                <a id="prof" onclick="togglePopup_prof()" href="#"><span class="glyphicon fa fa-user" aria-hidden="true"></span><span class="nav-label">Profile</span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-content" id="m_content">
+          
+          <div id="wel" >
+          <div id="wel1" class=" welcome">
+          <h1 id="head"> Welcome To PlaceX </h1>
+          <p id="content">Place where dreams are made off.</p>
+          </div>
+          
+          <!-- <div class="col-md-1"></div> -->
+          <div class="welcome calen">
+            <p class="head_card" style="color: black;"><i class="fas fa-calendar-alt"></i>&nbsp;Calendar</p>
+            <table style="border:1px;">
+  
+              <tr>
+              <th><</th> 
+              <th colspan="6">August 2021</th>
+              <th>></th>
+              </tr>
+              
+              <tr>
+              <th>Su</th>
+              <th>Mo</th>
+              <th>Tu</th>
+              <th>We</th>
+              <th>Th</th>
+              <th>Fr</th>
+              <th>Sa</th>
+              </tr>
+              
+              <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              </tr>
+              
+              <tr>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              </tr>
+              
+              <tr>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+              <td>19</td>
+              <td>20</td>
+              <td>21</td>
+              </tr>
+              
+              <tr>
+              <td>22</td>
+              <td>23</td>
+              <td>24</td>
+              <td>25</td>
+              <td>26</td>
+              <td>27</td>
+              <td>28</td>
+              </tr>
+              
+              <tr>
+              <td>29</td>
+              <td>30</td>
+              <td>31</td>
+              </tr>
+              
+              </table>
+          </div>
+          </div>
+          <div class="">
+           
+          <div class="display_course" id="display_course" style="display: none;">
+            <div class="card">
+            <p class="head_card"><i class="fas fa-file-pdf"></i>&nbsp;FILES</p>
+            <div id="table">
+              <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">File name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Handled By</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Normalisation.pdf</td>
+                    <td>DBMS</td>
+                    <td>Megananthan K</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Threads.pdf</td>
+                    <td>Operating Systems</td>
+                    <td>Ashwith N</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Complexities.pdf</td>
+                    <td>Data Structures</td>
+                    <td>Suresh J</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+          
+          </div>
+
+          <div class="card">
+            <p class="head_card"><i class="fas fa-video"></i>&nbsp;Videos</p>
+            <div id="table">
+              <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">File name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Handled By</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Normalisation.pdf</td>
+                    <td>DBMS</td>
+                    <td>Megananthan K</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Threads.pdf</td>
+                    <td>Operating Systems</td>
+                    <td>Ashwith N</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Complexities.pdf</td>
+                    <td>Data Structures</td>
+                    <td>Suresh J</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+          
+          </div>
+
+        </div>
+          </div>
+
+          <div class="display_assess" id="display_assess" style="display: none;">
+            <div class="card">
+              <p class="head_card"><i class="fas fa-clipboard-list"></i>&nbsp;Assessments</p>
+            <div id="table">
+              <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="display_company" id="display_company" style="display: none;">
+                <div class="card">
+                  <p class="head_card"><i class="fas fa-book-reader"></i>&nbsp;Interview Experience</p>
+                <div id="table">
+                  <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+              </div>
+                
+
+              <div class="card">
+                <p class="head_card"><i class="fas fa-building"></i>&nbsp;About Increff</p>
+              <div id="table">
+                <table class="table">
+                  <thead class="thead-dark">
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                  </tr>
+                  </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="display_graph" id="display_graph" style="display: none;">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="graph">
+                  <p class="head_card_g"><i class="fas fa-chart-pie"></i>&nbsp;Pie Chart</p>
+                  <div id="piechart_3d" style="width: 500px; height: 200px;"></div>
+              </div>
+
+            </div>
+            <div class="col-md-2"></div>
+
+              <div class="col-md-5">
+                <div class="graph">
+                  <p class="head_card_g"><i class="fas fa-chart-bar"></i>&nbsp;Bar Graph</p>
+                  <div id="chart_div" style="width: 500px; height: 200px;"></div>
+                </div>
+
+              </div>
+
+            </div>
+            
+          
+            
+
+         
+      </div>
+
+          <div id="pop_window">
+            <div class="popup" id="popup-1">
+              <div class="overlay"></div>
+              <div class="content">
+                <button class="close-btn" onclick="togglePopup_course()">×</button>
+                <h1>Course</h1>
+                <p>These are the list of courses available to you for reference materials</p>
+                <br>
+                <form  action="">
+                  <div class="sel_form">
+                    <label for="course">Select a course:</label>&nbsp;
+                    <select name="course" id="course">
+                        <option value="dsa">Data Structures and Algorithms</option>
+                        <option value="dbms">DBMS</option>
+                        <option value="os">OS</option>
+                        <option value="network">Networking</option>
+                    </select>
+                  </div>
+                  
+                  <br><br>
+                  <input class="sub_btn" onclick="render_course()" type="button" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-2">
+              <div class="overlay"></div>
+              <div class="content">
+                <button class="close-btn" onclick="togglePopup_assess()">×</button>
+                <h1>Assessments</h1>
+                <p>These are the list of assessment types available for you</p>
+                
+                <form action="">
+                  <div class="sel_form">
+                    <label for="assess">Assessment type:</label>&nbsp;
+                    <select name="assess" id="assess">
+                        <option value="live">Live</option>
+                        <option value="completed">Completed</option>
+                        <option value="missed">Missed</option>
+                    </select>
+                  </div>
+                  <br><br>
+                  <input class="sub_btn" onclick="render_assess()" type="button" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-3">
+              <div class="overlay"></div>
+              <div class="content">
+                <button class="close-btn" onclick="togglePopup_comp()">×</button>
+                <h1>Company</h1>
+                <p>These are the list of companies who have visited your university</p>
+                
+                <form action="">
+                  <div class="sel_form">
+                    <label for="company">Select a Company:</label>&nbsp;
+                    <select name="company" id="company">
+                        <option value="increff">Increff</option>
+                        <option value="tcs">TCS</option>
+                        <option value="tally">Tally Solutions</option>
+                        <option value="sap">SAP Labs</option>
+                    </select>
+                  </div>
+                  <br><br>
+                  <input class="sub_btn" onclick="render_company()" type="button" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-4">
+              <div class="overlay"></div>
+              <div class="content">
+                <button class="close-btn" onclick="togglePopup_perform()">×</button>
+                <h1>Performance</h1>
+                <p>This is to assess your performance subject-wise</p>
+                
+                <form action="">
+                  <div class="sel_form">
+                    <label for="perf">Select a course:</label>&nbsp;
+                    <select name="perf" id="perf">
+                        <option value="dsa">Data Structures and Algorithms</option>
+                        <option value="dbms">DBMS</option>
+                        <option value="os">OS</option>
+                        <option value="network">Networking</option>
+                    </select>
+                  </div>
+                  <br><br>
+                  <input class="sub_btn" onclick="render_graph()" type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="popup" id="popup-5">
+              <div class="overlay"></div>
+              <div class="content">
+                <button class="close-btn" onclick="togglePopup_prof()">×</button>
+                <h1>Profile</h1>
+                &nbsp;
+                  <div class="row">
+                    <div class="col-md-5" id="photo-1" >
+                      <img src="./IMG/mypic.jpg" alt="John" style="width:90%;">
+
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-6">
+                      <h1>Ashwith N</h1>
+                      <p class="pro_title">4th year, B-Tech CSE</p>
+                      <p>Amrita University, Coimbatore</p>
+                      <div style="margin: 24px 0;">
+                        <a class="social_icon" href="#"><i class="fa fa-dribbble"></i></a> 
+                        <a class="social_icon" href="#"><i class="fa fa-twitter"></i></a>  
+                        <a class="social_icon" href="#"><i class="fa fa-linkedin"></i></a>  
+                        <a class="social_icon" href="#"><i class="fa fa-facebook"></i></a> 
+                      </div>
+                      <p><button class="pro_button">CB.EN.U4CSE18110</button></p>
+                    </div>
+                  </div>
+                 
+                  
+                
+              </div> 
+            </div>                            
+          </div>
+          
+          </div>
+          </div>
+                            
+        </div>
+    
+        <script src="./JS/user_fn.js"></script>
+        <script src="./JS/student_fn.js"></script>
+    </body>
+
+</html>

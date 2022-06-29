@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Login
+        </title>
+
+        <link rel="shortcut icon" href="./IMG/logo_1.png"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" href="./CSS/login.css">
+        <link rel="stylesheet" href="./CSS/all_page.css">
+        <!-- <link href="http://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <div class="container">
+          <div class="row login" >
+            <div class="col-md-7" id="log">
+            </div>
+            <div class="col-md-5 form">
+              <h3>Student Sign Up</h3>
+              <br>
+              <form method="post" action="student_create_account">
+                <p>
+                  
+                  <input type="text" placeholder="name" name="username" >
+                </p>
+
+                <p>
+                  
+                  <input type="text" placeholder="student_id" name="student_id" >
+                </p>
+
+                <p>
+                  
+                  <input type="number" placeholder="student_curr_sem" name="student_curr_sem" >
+                </p>
+
+                <p>
+                  
+                  <input type="text" placeholder="degree" name="degree" >
+                </p>
+
+                <p>
+                  
+                  <input type="text" placeholder="branch" name="branch" >
+                </p>
+
+                <p>
+                  
+                  <input type="text" placeholder="section" name="section" >
+                </p>
+                
+                <p>
+                  
+                  <input type="text" placeholder="email" name="email" >
+                </p>
+                
+                <p>
+                  
+                  <input type="password" placeholder="student_Password" name="student_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </p>
+
+                <p>
+                  
+                  <input type="password" placeholder="student_re_enter_Password" name="student_re_enter_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </p>
+
+
+                <br>
+                <p>
+                  <input id="login_btn" type="submit" class="bttn" value="Create Account">
+                </p>
+              </form>
+              <hr class="my-4">
+              
+              
+            </div>
+          </div>
+                            
+        </div>
+        
+    </body>
+
+</html>

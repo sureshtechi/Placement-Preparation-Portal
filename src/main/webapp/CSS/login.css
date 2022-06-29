@@ -1,0 +1,230 @@
+.prof {
+   
+    overflow:hidden;
+    margin: 0 auto;
+    padding: 2px;
+    border-radius: 15px;
+    width: 130px;
+    height: 130px;
+    
+    
+}
+
+[class=profiless] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+ 
+  [class=profiless] + #admin,#student,#teacher {
+    cursor: pointer;
+    border: 5px solid rgb(78, 170, 173);
+    border-radius: 15px;
+  }
+  
+ 
+  [class=profiless]:checked + #admin {
+    border: 5px solid rgb(36, 235, 79);
+    border-radius: 15px;
+  }
+ 
+  [class=profiless]:checked + #student {
+    border: 5px solid rgb(36, 235, 79);
+    border-radius: 15px;
+  }
+ 
+  [class=profiless]:checked + #teacher {
+    border: 5px solid rgb(36, 235, 79);
+    border-radius: 15px;
+  }
+
+
+
+#admin{
+    background-image: url('../IMG/login_img/admin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94%;
+    width:94%;
+    transition: 0.5s all ease-in-out;
+}
+
+#admin:hover::after{
+    content:"Admin";
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#admin:hover{
+    overflow:hidden;
+    transform: scale(1.15);
+    background-image: rgba(0, 0, 0, 0.39);
+}
+
+#student{
+    background-image: url('../IMG/login_img/student.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94%;
+    width:94%;
+    transition: 0.5s all ease-in-out;
+}
+
+#student:hover::after{
+    content:"Student";
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#student:hover{
+    overflow:hidden;
+    transform: scale(1.15);
+    background-image: rgba(0, 0, 0, 0.39);
+}
+
+#teacher{
+    background-image: url('../IMG/login_img/teacher.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94%;
+    width:94%;
+    transition: 0.5s all ease-in-out;
+}
+
+#teacher:hover::after{
+    content:"Faculty";
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#teacher:hover{
+    overflow:hidden;
+    transform: scale(1.15);
+    
+}
+
+
+
+
+#login_btn{
+    width:30%;
+    background-color: #337ab7;
+    color:#efefef;
+    border: 2px solid #337ab7;
+}
+
+#login_btn:hover{
+    
+    background-color: #efefef;
+    color:#276092;
+    border: 2px solid #276092;
+}
+
+
+#g_sign{
+    width:30%;
+    margin-right: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    border: 2px solid #1d2525;
+}
+
+#g_sign:hover{
+    background-color:#efefef;
+    color: #1d2525;
+    border: 2px solid #1d2525;
+    
+    transition-delay: 1000ms ease-out ;
+}
+
+#g_icon{
+    width:42px;
+    height:42px;
+    padding: 5px;
+    position:relative;
+    top:20px;
+}
+
+.login{
+    text-align: center;
+    margin-top: 8%;
+    
+    position: relative;
+    
+}
+
+body{
+    background: url(../IMG/log_bac.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding: 30px; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+    
+}
+
+h3{
+    font-size:40px;
+}
+
+/* #log {
+    
+ } */
+
+ .form{
+     
+     border-radius: 20px;     
+     background: rgba(239, 239, 239, 0.5);
+      
+ }
+ input{
+     border-radius: 20px;
+     /* background-color:#d1e6e6; */
+     background-color:#1d2525;
+     outline: none;
+     border: none;
+     width: 80%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     color: #efefef;
+     font-size: 20px;
+     font-weight: 400;
+ }
+ input::placeholder{
+     text-align: center;
+     color: #efefef;
+     font-weight: bolder;
+     font-size: 20px;
+     
+ }
+
+ .bttn{
+     border-radius: 20px;
+     font-weight: bolder;
+     font-size: 20px;
+     text-align: center;
+ }
+
+
+ #pos{
+    border-radius: 20px;
+    background-color:#fdfcfc;
+    outline: none;
+    border: none;
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+  }

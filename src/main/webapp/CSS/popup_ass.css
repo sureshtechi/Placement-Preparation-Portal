@@ -1,0 +1,284 @@
+/* ASSESS */
+.display_company .sel_form1 .c_assess{
+  background-color: rgb(245, 224, 199);
+  color: black;
+  font-weight: bolder;
+}
+
+.display_company .sel_form1 .c_assess::placeholder{
+  font-weight: bold;
+  color: black;
+}
+.display_company .sel_form1{
+  /* position: absolute; */
+  top:20%;
+  margin-left: 18%;
+
+}
+
+.display_company .sub_btn1{
+  /* position: absolute; */
+  width:20%;
+  bottom: 50%;
+  margin-left: 41%;
+  font-weight: 700;
+  border:2px solid #222!important;
+  text-align: center;
+}
+
+.display_company .sub_btn1:hover{
+  color: #222;;
+  background-color:#eee;
+}
+
+
+
+
+.popup .sel_form1 .c_assess{
+  background-color: rgb(245, 224, 199);
+  color: black;
+  font-weight: bolder;
+}
+
+.popup .sel_form1 .c_assess::placeholder{
+  font-weight: bold;
+  color: black;
+}
+.popup .sel_form1{
+  position: absolute;
+  top:20%;
+  left: 0%;
+
+}
+
+.popup .sub_btn1{
+  position: absolute;
+  width:20%;
+  bottom: 5px;
+  left: 41%;
+  font-weight: 700;
+  border:2px solid #222!important;
+}
+
+.popup .sub_btn1:hover{
+  color: #222;;
+  background-color:#eee;
+}
+
+ 
+.popup .cont {
+
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:95%;
+  max-width:700px;
+  height:450px;
+  z-index:2;
+  text-align:center;
+  padding:10px;
+  box-sizing:border-box;
+
+  border-radius: 20px;
+}
+ 
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  font-size:18px;
+  font-weight:bolder;
+  width:35px;
+  height:35px;
+  border: none;
+  right:15px;
+  top:15px;
+  background:#222;
+  color:#fff;
+  transition-duration: 0.5s;
+  transition-delay: all 500ms ease-in;
+  border-radius:50%;
+}
+ 
+.popup .close-btn:hover {
+  
+  background:rgb(214, 210, 210);
+  color:#222;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+ 
+
+
+
+
+
+.popup .sel_form{
+  position: absolute;
+  top:35%;
+  left: 30%;
+  
+}
+
+.popup .sub_btn{
+  position: absolute;
+  width:20%;
+  bottom: 50px;
+  left: 41%;
+  font-weight: 700;
+  border:2px solid #222!important;
+}
+
+.popup .sub_btn:hover{
+  color: #222;;
+  background-color:#eee;
+}
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+  
+}
+ 
+.popup .content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:95%;
+  max-width:700px;
+  height:450px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+
+  border-radius: 20px;
+}
+ 
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  font-size:18px;
+  font-weight:bolder;
+  width:35px;
+  height:35px;
+  border: none;
+  right:15px;
+  top:15px;
+  background:#222;
+  color:#fff;
+  transition-duration: 0.5s;
+  transition-delay: all 500ms ease-in;
+  /* right:15px;
+  top:15px;
+  width:30px;
+  height:30px;
+  background:#222;
+  
+  color:#fff;
+  
+  line-height:30px;
+  text-align:center;
+  vertical-align: middle;  */
+  border-radius:50%;
+}
+ 
+.popup .close-btn:hover {
+  
+  background:rgb(214, 210, 210);
+  color:#222;
+  
+  
+}
+
+
+.popup.active .overlay {
+  display:block;
+}
+ 
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+ 
+ .sub_btn3{
+  
+  bottom: 5px;
+  left: 41%;
+  margin-left: 25%;
+  font-weight: 700;
+  border:2px solid #222!important;
+}
+
+.sub_btn3:hover{
+  color: #222;;
+  background-color:#eee;
+}
+
+.go_b{
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  padding-top: 15px;
+  text-align: center;
+  margin-left: 25%;
+  font-weight: bolder;
+  font-size: larger;
+  background-color:#222 ;
+  color: #eee;
+  border:2px solid #222!important;
+  text-decoration: none;
+}
+
+.go_b:hover{
+  text-decoration: none;
+  color: #222;
+  background-color:#eee;
+}
+
+.check{
+	border-radius:20px;
+	border:2px solid #007bff;
+	background-color:#efefef;
+	padding-top:8px;
+	padding-bottom:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.check:hover{
+	background-color:#007bff;
+	color:#efefef;
+	
+}
+
+.drop1{
+	font-size:large;
+	font-weigh:bold;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	border-radius:15px;
+	text-align:center;
+	border:2px solid #ffe84d;
+}
+
+
+
+
+
+

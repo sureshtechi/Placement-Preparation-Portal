@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Login
+        </title>
+		
+		<script type="text/javascript">
+            function disableBack() 
+                { 
+                    window.history.forward(); 
+                }
+                setTimeout("disableBack()", 0);
+                window.onunload = function () { null };
+        </script>
+		
+        <link rel="shortcut icon" href="./IMG/logo_1.png"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" href="./CSS/login.css">
+        <link rel="stylesheet" href="./CSS/all_page.css">
+        <!-- <link href="http://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet"> -->
+
+    </head>
+    <body>
+        <div class="container">
+        
+        
+          <div class="row login" >
+            <div class="col-md-7" id="log">
+            </div>
+            <div class="col-md-5 form">
+              <h3>Login</h3>
+              <br>
+              <form method="post" action="login">
+                <p>
+                  <input type="text" placeholder="Roll Number" name="username" >
+                </p>
+                
+                <p>
+                  <input type="password" placeholder="Password" name="password" >
+                </p>
+                <div class="row" style="padding: 10px;">
+                  <div class="prof col-md-4">
+                      <label>
+                        <input type="radio" class="profiless" name="role" value="admin">
+                        <div id="admin">
+                          <br>
+                          <br>
+                        </div>
+                      </label>
+                  </div>
+                  
+                  <div class="prof col-md-4">
+                    <label>
+                      <input type="radio" class="profiless" name="role" value="student">
+                      <div id="student">
+                        <br>
+                        <br>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="prof col-md-4">
+                  <label>
+                    <input type="radio" class="profiless" name="role" value="faculty">
+                    <div id="teacher">
+                      <br>
+                      <br>
+                    </div>
+                  </label>
+                  </div>
+                </div>
+
+                 
+                
+                <p>
+                  <input id="login_btn" type="submit" class="bttn" value="Login">
+                </p>
+                
+                
+                <label name="student_login_errmsg" >
+                
+                </label>
+              </form>
+                    
+              <hr class="my-4">
+              <div id="google">
+               
+ 
+              </div>
+              
+              
+            </div>
+          </div>
+                            
+        </div>
+        
+    </body>
+
+</html>
